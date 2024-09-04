@@ -16,7 +16,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} prose`}>{children}</body>
+      <body className={`${inter.className} prose`}>
+        <h1 className="text-2xl my-4">
+          👑 This is root {`'/(docs)/docs/layout.tsx'`}
+        </h1>
+        {children}
+      </body>
     </html>
   );
 }
